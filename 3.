@@ -1,0 +1,27 @@
+def is_triangle_possible(angle1, angle2):
+    if angle1 + angle2 < 180:
+        return True
+    else:
+        return False
+
+def is_right_triangle(angle1, angle2):
+    if angle1 == 90 or angle2 == 90 or (angle1 + angle2) == 90:
+        return True
+    else:
+        return False
+
+# Значення градусів кутів трикутника
+angle1 = 60
+angle2 = 30
+
+# Перевірка можливості існування трикутника
+if is_triangle_possible(angle1, angle2):
+    print("Такий трикутник існує.")
+
+    # Перевірка, чи трикутник прямокутний
+    if is_right_triangle(angle1, angle2):
+        print("Цей трикутник є прямокутним.")
+    else:
+        print("Цей трикутник не є прямокутним.")
+else:
+    print("Такого трикутника не існує.")
