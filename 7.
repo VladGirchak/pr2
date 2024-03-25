@@ -1,0 +1,16 @@
+# Конкретні числа a, b, c
+a = 5
+b = -3
+c = 0
+
+# Підрахунок кількості негативних чисел
+count_negative = 0
+if a < 0:
+    count_negative += 1
+if b < 0:
+    count_negative += 1
+if c < 0:
+    count_negative += 1
+
+# Виведення результату
+print("Кількість негативних чисел серед a, b, c:", count_negative)
