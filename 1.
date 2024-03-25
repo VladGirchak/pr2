@@ -1,1 +1,22 @@
+def square_or_fourth_power(x):
+    if x >= 0:
+        return x ** 2
+    else:
+        global fourth_power_sum
+        fourth_power_sum += x ** 4
+        return None
 
+fourth_power_sum = 0
+
+num1 = 3
+num2 = -2
+num3 = 4
+
+result1 = square_or_fourth_power(num1)
+result2 = square_or_fourth_power(num2)
+result3 = square_or_fourth_power(num3)
+
+print("Результат для першого числа:", result1)
+print("Результат для другого числа:", result2)
+print("Результат для третього числа:", result3)
+print("Сума четвертих ступенів від'ємних чисел:", fourth_power_sum)
