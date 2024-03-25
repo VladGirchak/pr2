@@ -1,0 +1,16 @@
+# Конкретні числа a, b, c
+a = 5
+b = -3
+c = 7.0
+
+# Підрахунок кількості цілих чисел
+count_integers = 0
+if isinstance(a, int):
+    count_integers += 1
+if isinstance(b, int):
+    count_integers += 1
+if isinstance(c, int):
+    count_integers += 1
+
+# Виведення результату
+print("Кількість цілих чисел серед a, b, c:", count_integers)
